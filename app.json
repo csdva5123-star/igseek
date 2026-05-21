@@ -6,36 +6,31 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "igseek",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#383839"
     },
-    "ios": {
-      "supportsTablet": false,
-      "bundleIdentifier": "com.igseek.app"
-    },
+    "ios": { "supportsTablet": false },
     "android": {
-      "package": "com.igseek.app"
+      "backgroundColor": "#383839",
+      "package": "com.igseek.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#383839"
+      },
+      "abiFilters": ["arm64-v8a"]
     },
-    "web": {
-      "favicon": "./assets/images/favicon.png"
-    },
+    "web": { "favicon": "./assets/images/icon.png" },
     "plugins": [
-      [
-        "expo-router",
-        {
-          "origin": "https://replit.com/"
-        }
-      ],
+      ["expo-router", { "origin": "https://replit.com/" }],
       "expo-font",
       "expo-web-browser"
     ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
-    }
+    "experiments": { "typedRoutes": true, "reactCompiler": true },
+    "extra": { "eas": { "projectId": "c3f9d5c1-e680-4e76-bfe2-2a4a5cd8e165" } },
+    "owner": "anatoper1"
   }
 }
