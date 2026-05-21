@@ -5,18 +5,16 @@
   "build": {
     "preview": {
       "android": {
-        "buildType": "apk",
-        "gradleCommand": ":app:assembleRelease",
-        "withoutCredentials": false
+        "buildType": "apk"
       },
       "distribution": "internal",
-      "node": "20.18.0",
+      "node": "20.19.4",
       "env": {
         "EXPO_PUBLIC_DOMAIN": "032ce6f4-3140-4615-a3c3-2c6e80e8d232-00-v3znkzg6mg0x.pike.replit.dev"
       }
     },
     "production": {
-      "node": "20.18.0"
+      "node": "20.19.4"
     }
   },
   "submit": {
